@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/bootstrap.bundle.js"></script>
+    <title>Perfil profesional</title>
+</head>
+<body>
+    
+    <!-- NAVBAR-->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Mi perfil profesional</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Introducción</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#experiencia">Experiencia profesional</a>
+              </li>
+              
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Aptitudes
+                </a>
+                <ul class="dropdown-menu dropdown-menu-dark" style="background-color: #003050;">
+                  <li><a class="dropdown-item" href="#idiomas">Idiomas</a></li>
+                  <li><a class="dropdown-item" href="#daw">Diseño de aplicaciones web</a></li>
+                </ul>
+              </li>
+              
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#datos">Datos personales</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#formacion">Formación académica</a>
+              </li>
+              <li class="nav-item">
+                <!-- Button trigger modal -->
+								<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  Contactar
+                  </button>
+                  
+                  <!-- Modal -->
+                  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="exampleModalLabel">Formulario de contacto</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                      <!--Formulario-->
+                      <form class="needs-validation" action="index.html" novalidate>
+                    <div class="modal-body">
+                    
+                      <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Nombre</label>
+                        <input type="text" class="form-control" id="exampleFormControlInput1" required>
+                          <div class="alert alert-danger invalid-feedback" role="alert">Debes poner el nombre</div>
+                      </div>
+                      
+                      <div class="mb-3">
+                        <label for="exampleFormControlInput2" class="form-label">Correo</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput2" placeholder="name@example.com" required>
+                        <div class="alert alert-danger invalid-feedback" role="alert">Debes poner un correo válido</div>
+                      </div>
+                      <div class="mb-3">
+                        <label for="exampleFormControlInput3" class="form-label">Teléfono</label>
+                        <input type="tel" class="form-control" id="exampleFormControlInput3">
+                        <div class="alert alert-danger invalid-feedback" role="alert">El teléfono no es correcto</div>
+                      </div>
+                      <div class="mb-3">
+                        <label for="exampleFormControlInput4" class="form-label">Motivo del contacto</label>
+                        <input type="text" class="form-control" id="exampleFormControlInput4" required>
+                        <div class="alert alert-danger invalid-feedback" role="alert">El motivo del contacto no puede estar vacío</div>
+                      </div>
+                      <div class="mb-3">
+                        <label for="exampleFormControlTextarea5" class="form-label">Mensaje</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea5" rows="3" required></textarea>
+                        <div class="alert alert-danger invalid-feedback" role="alert">Escribe el contenido del mensaje</div>
+                      </div>
+                    
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                      <button type="submit" class="btn btn-primary">Enviar</button>
+                    </div>
+                  </form>
+                    </div>
+                  </div>
+                  </div>
+                  <script>// Example starter JavaScript for disabling form submissions if there are invalid fields
+                    (() => {
+                      'use strict'
+                    
+                      // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                      const forms = document.querySelectorAll('.needs-validation')
+                    
+                      // Loop over them and prevent submission
+                      Array.from(forms).forEach(form => {
+                        form.addEventListener('submit', event => {
+                          if (!form.checkValidity()) {
+                            event.preventDefault()
+                            event.stopPropagation()
+                          }
+                    
+                          form.classList.add('was-validated')
+                        }, false)
+                      })
+                    })()</script>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!--Introducción-->
+      <div id="introduccion">
+        <div class="container-lg justify-content-lg-center" style="margin-bottom:3em">
+            <div class="row" style="padding:5em;align-items:center;">
+              
+              <div class="col-lg-7">
+                <p class="display-4" style="text-align:center;">Introducción</p>
+                <p class="display-7" style="font-size:larger;text-align: center;">Me llamo José Fernández, actualmente soy un estudiante de la formación superior de Desarrollo de Aplicaciones Web en ILERNA, y este es mi formulario.</p>
+              </div>
+              
+              <div class="col-lg-5" >
+              <img src="img/foto_perfil.png" class="img-fluid rounded-circle">
+              
+              </div>
+                
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+
+      <!--Experiencia-->
+      <div id="experiencia">
+        <div class="container-lg justify-content-lg-center">
+          <p class="display-4" style="text-align:center">Experiencia profesional</p>
+          <div class="row" style="align-items: center;">
+            <div class="col-lg-1"></div>
+            <div class="col-lg-5">
+              <p class="display-7" style="font-size:larger;text-align:justify;padding:2em">Tuve la gran suerte de trabajar en Malta y poder trabajar de lo que estaba estudiando. Estuve un mes con un compañero más de clase que se animó a hacer las prácticas conmigo.
+                <br>Esta experiencia nos ayudó a conocer una cultura diferente a la nuestra, reforzar el inglés,  madurar al estar un tiempo independizado de mi familia, aprender nuevos conocimientos y a trabajar en equipo.
+              </p>
+            </div>
+            <div class="col-lg-6">
+              <div class="container" id="fotos">
+                <div class="row">
+                  <div class="col-6">
+                    <img src="img/callemalta.png" class="img-thumbnail"><img src="img/programador.png" class="img-thumbnail">
+                  </div>
+                  <div class="col-6">
+                    <img src="img/pantalla.png" class="img-thumbnail"><img src="img/banderamalta.png" class="img-thumbnail">
+                  </div>
+
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      
+
+      <!--Skills-->
+      <div id="skills">
+        <div class="container-lg justify-content-lg-center">
+          <p class="display-4" style="text-align:center">Aptitudes</p>
+          <!--Idiomas-->
+          <div class="row" style="align-items: center;margin-bottom:2em">
+            
+            <p id="idiomas" class="display-6" id="idiomas">Idiomas</p>
+            <div class="col-lg-1"></div>
+            <div class="card mb-3" style="max-width: 540px;margin-right:3em">
+              <div class="row g-0" style="align-items: center;">
+                <div class="col-lg-3">
+                  <img src="img/banderaespaña.png" class="img-fluid rounded-start" style="border:1px solid grey;margin-left:1em;" width="100em">
+                </div>
+                <div class="col-lg-9">
+                  <div class="card-body">
+                    <h5 class="card-title">Español</h5>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card mb-3" style="max-width: 540px; ">
+              <div class="row g-0" style="align-items: center;">
+                <div class="col-lg-3">
+                  <img src="img/banderaingles.png" class="img-fluid rounded-start" style="border:1px solid grey;margin-left:1em;" width="100em">
+                </div>
+                <div class="col-lg-9">
+                  <div class="card-body">
+                    <h5 class="card-title">Inglés</h5>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!--DAW-->
+          <div class="row tarjeta" style="align-items: center;">
+            <p id="daw" class="display-6" id="idiomas">Diseño de Aplicaciones Web</p>
+
+            <div class="col-lg-1"></div>
+            <div class="card mb-3" style="max-width: 540px;margin-right:3em">
+              <div class="row g-0" style="align-items: center;">
+                <div class="col-lg-3">
+                  <img src="img/php.png" class="img-fluid rounded-start" style="border:1px solid grey;margin-left:1em;" width="100em">
+                </div>
+                <div class="col-lg-9">
+                  <div class="card-body">
+                    <h5 class="card-title">PHP</h5>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card mb-3 tarjeta" style="max-width: 540px;">
+              <div class="row g-0" style="align-items: center;">
+                <div class="col-lg-3">
+                  <img src="img/js.png" class="img-fluid rounded-start" style="border:1px solid grey;margin-left:1em;" width="100em">
+                </div>
+                <div class="col-lg-9">
+                  <div class="card-body">
+                    <h5 class="card-title">JavaScript</h5>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-1"></div>
+            <div class="card mb-3" style="max-width: 540px;margin-right:3em">
+              <div class="row g-0" style="align-items: center;">
+                <div class="col-lg-3">
+                  <img src="img/b5.png" class="img-fluid rounded-start" style="border:1px solid grey;margin-left:1em;" width="100em">
+                </div>
+                <div class="col-lg-9">
+                  <div class="card-body">
+                    <h5 class="card-title">Bootstrap</h5>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card mb-3" style="max-width: 540px;">
+              <div class="row g-0" style="align-items: center;">
+                <div class="col-lg-3">
+                  <img src="img/docker.png" class="img-fluid rounded-start" style="border:1px solid grey;margin-left:1em;" width="100em">
+                </div>
+                <div class="col-lg-9">
+                  <div class="card-body">
+                    <h5 class="card-title">Docker</h5>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-1"></div>
+            <div class="card mb-3" style="max-width: 540px;margin-right:3em">
+              <div class="row g-0" style="align-items: center;">
+                <div class="col-lg-3">
+                  <img src="img/java.png" class="img-fluid rounded-start" style="border:1px solid grey;margin-left:1em;" width="100em">
+                </div>
+                <div class="col-lg-9">
+                  <div class="card-body">
+                    <h5 class="card-title">Java</h5>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card mb-3" style="max-width: 540px;">
+              <div class="row g-0" style="align-items: center;">
+                <div class="col-lg-3">
+                  <img src="img/mysql.png" class="img-fluid rounded-start" style="border:1px solid grey;margin-left:1em;" width="100em">
+                </div>
+                <div class="col-lg-9">
+                  <div class="card-body">
+                    <h5 class="card-title">MySQL</h5>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+       <!--Datos-->
+       <div id="datos">
+        <div class="container-lg justify-content-lg-center">
+          <p class="display-4" style="text-align:center">Datos personales</p>
+          <div class="row" style="align-items: center;">
+            <div class="col-lg-3"></div>
+            <div class="col-lg-6">
+            <table class="table">
+              <tbody>
+                <tr>
+                  <th scope="row">Nombre y apellidos</th>
+                  <td>Jose Fernandez Herrera</td>
+                </tr>
+                <tr>
+                  <th scope="row">Domicilio</th>
+                  <td>Calle Fray Francisco de Urso, 17</td>
+                </tr>
+                <tr>
+                  <th scope="row">Teléfono</th>
+                  <td>+34 601986235</td>
+                </tr>
+                <tr>
+                  <th scope="row">Fecha de nacimiento</th>
+                  <td>19/02/2002</td>
+                </tr>
+                <tr>
+                  <th scope="row">Redes sociales</th>
+                  <td><img src="img/instagram-icon.png" class="img-fluid" width="7%" height="7%">  <a href="https://www.instagram.com/josefernandez.8/">josefernandez.8</a></td>
+                </tr>
+                <tr>
+                  <th scope="row">Localización</th>
+                  <td>Sevilla, España</td>
+                </tr>
+                <tr>
+                  <th scope="row">Profesión</th>
+                  <td>Desarrollador de aplicaciones Web</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+            <div class="col-lg-3"></div>
+ 
+          </div>
+        </div>
+      </div>
+
+      <!--Formación-->
+      <div id="formacion">
+        <div class="container-lg justify-content-lg-center">
+          <p class="display-4" style="text-align:center">Formación académica</p>
+          <div class="row" style="align-items: center;">
+         
+            <p style="text-align:center">
+              <button class="btn btn-primary" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Escolar</button>
+              <button class="btn btn-primary" data-bs-toggle="collapse" href="#multiCollapseExample2" role="button" aria-expanded="false" aria-controls="multiCollapseExample2">Otros</button>
+              
+            </p>
+          </div>
+            <div class="row">
+              <div class="col">
+                <div class="collapse multi-collapse" id="multiCollapseExample1">
+                  <div class="card card-body">
+                    <ul class="list-group">
+                      <li class="list-group-item"><b>Educación Secundaria Obligatoria (2014-2017)</b></li>
+                      <li class="list-group-item"><b>Bachillerato de Ciencias (2018-2020)</b></li>
+                      <li class="list-group-item"><b>Desarrollo de Aplicaciones Web (2021-2022)</b></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="collapse multi-collapse" id="multiCollapseExample2">
+                  <div class="card card-body">
+                    <ul class="list-group">
+                      <li class="list-group-item"><b>Conservatorio (2010-2017)</b></li>
+                      <li class="list-group-item"><b>Desarrollo de aplicaciones Web 2021/2022</b></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+     
+</body>
+</html>

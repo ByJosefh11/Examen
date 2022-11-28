@@ -1,0 +1,32 @@
+body{
+    background-color:rgb(225, 235, 246);
+}
+
+
+.navbar{
+    background-color: #003050;
+    padding-top:1em;
+    padding-bottom:1em
+}
+
+.btn-primary{
+    background-color: #003050;
+    border: 0px;
+}
+
+#experiencia,#formacion,#skills,#datos{
+    margin-bottom:3em;
+}
+
+.row-g0{
+    align-items: center;
+}
+
+.rounded-start{
+    height: 90px;
+}
+
+
+a{
+    text-decoration:none;
+}
