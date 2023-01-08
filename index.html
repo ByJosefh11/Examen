@@ -74,7 +74,7 @@
                       </div>
                       <div class="mb-3">
                         <label for="exampleFormControlInput3" class="form-label">Teléfono</label>
-                        <input type="tel" class="form-control" id="exampleFormControlInput3">
+                        <input type="tel" class="form-control" id="exampleFormControlInput3" pattern="[0-9]{9}" required>
                         <div class="alert alert-danger invalid-feedback" role="alert">El teléfono no es correcto</div>
                       </div>
                       <div class="mb-3">
@@ -120,7 +120,12 @@
             </ul>
           </div>
         </div>
+        <!--BOTON ECLIPSE-->
+        <button type="button" class="btn btn-primary" onclick="cambiarModo()">
+          <img src="img/eclipse.png" height="30em">
+        </button>
       </nav>
+
 
       <!--Introducción-->
       <div id="introduccion">
@@ -416,7 +421,46 @@
         document.oncontextmenu = function () {
             return false
         }
+
+        //No se podrá copiar en la web
+        document.addEventListener("copy", function (event) {
+            
+            event.preventDefault();
+        }, false);
+
+
+      //Cambiarlo a modo nocturno en la web
+      let modo_oscuro=false;
+
+      function activarModoOscuro(bool){
+        let body=document.body;
+        let navbar=document.querySelector(".navbar");
+        let th=document.querySelectorAll("th");
+        let td=document.querySelectorAll("td");
+        if(bool){
+          body.className="dark";
+          navbar.className="navbar navbar-expand-lg navbar-dark dark";
+          th.forEach((item)=>item.className="dark");
+          td.forEach((item)=>item.className="dark");
+        }else{
+          body.className="";
+          navbar.className="navbar navbar-expand-lg navbar-dark";
+          th.forEach((item)=>item.className="");
+          td.forEach((item)=>item.className="");
+        }
+      }
+
+      function cambiarModo(){
+        modo_oscuro = ! modo_oscuro;
+        activarModoOscuro(modo_oscuro);
+      }
+
+
+
       </script>
+
+
+
 
      
 </body>
