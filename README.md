@@ -1,4 +1,4 @@
-# Despliegue. 
-Recuperación de despliegue aplicaciones web
+# Despliegue
+Recuperación de despliegue aplicaciones web.
 
 
