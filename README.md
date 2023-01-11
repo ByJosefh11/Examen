@@ -1,4 +1,4 @@
-# Despliegue
-Recuperación de despliegue aplicaciones web.
+# Entorno cliente
+Recuperación de desarrollo web entorno cliente.
 
 
