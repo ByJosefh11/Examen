@@ -43,82 +43,7 @@
               <li class="nav-item">
                 <a class="nav-link" href="#formacion">Formación académica</a>
               </li>
-              <li class="nav-item">
-                <!-- Button trigger modal -->
-								<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                  Contactar
-                  </button>
-                  
-                  <!-- Modal -->
-                  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                  <div class="modal-dialog">
-                    <div class="modal-content">
-                    <div class="modal-header">
-                      <h1 class="modal-title fs-5" id="exampleModalLabel">Formulario de contacto</h1>
-                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                      <!--Formulario-->
-                      <form class="needs-validation" action="index.html" novalidate>
-                    <div class="modal-body">
-                    
-                      <div class="mb-3">
-                        <label for="exampleFormControlInput1" class="form-label">Nombre</label>
-                        <input type="text" class="form-control" id="exampleFormControlInput1" required>
-                          <div class="alert alert-danger invalid-feedback" role="alert">Debes poner el nombre</div>
-                      </div>
-                      
-                      <div class="mb-3">
-                        <label for="exampleFormControlInput2" class="form-label">Correo</label>
-                        <input type="email" class="form-control" id="exampleFormControlInput2" placeholder="name@example.com" required>
-                        <div class="alert alert-danger invalid-feedback" role="alert">Debes poner un correo válido</div>
-                      </div>
-                      <div class="mb-3">
-                        <label for="exampleFormControlInput3" class="form-label">Teléfono</label>
-                        <input type="tel" class="form-control" id="exampleFormControlInput3" pattern="[0-9]{9}" required>
-                        <div class="alert alert-danger invalid-feedback" role="alert">El teléfono no es correcto</div>
-                      </div>
-                      <div class="mb-3">
-                        <label for="exampleFormControlInput4" class="form-label">Motivo del contacto</label>
-                        <input type="text" class="form-control" id="exampleFormControlInput4" required>
-                        <div class="alert alert-danger invalid-feedback" role="alert">El motivo del contacto no puede estar vacío</div>
-                      </div>
-                      <div class="mb-3">
-                        <label for="exampleFormControlTextarea5" class="form-label">Mensaje</label>
-                        <textarea class="form-control" id="exampleFormControlTextarea5" rows="3" required></textarea>
-                        <div class="alert alert-danger invalid-feedback" role="alert">Escribe el contenido del mensaje</div>
-                      </div>
-                    
-                    </div>
-                    <div class="modal-footer">
-                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
-                      <button type="submit" class="btn btn-primary">Enviar</button>
-                    </div>
-                  </form>
-                    </div>
-                  </div>
-                  </div>
-                  <script>// Example starter JavaScript for disabling form submissions if there are invalid fields
-                    (() => {
-                      'use strict'
-                    
-                      // Fetch all the forms we want to apply custom Bootstrap validation styles to
-                      const forms = document.querySelectorAll('.needs-validation')
-                    
-                      // Loop over them and prevent submission
-                      Array.from(forms).forEach(form => {
-                        form.addEventListener('submit', event => {
-                          if (!form.checkValidity()) {
-                            event.preventDefault()
-                            event.stopPropagation()
-                          }
-                    
-                          form.classList.add('was-validated')
-                        }, false)
-                      })
-                    })()</script>
-              </li>
-            </ul>
-          </div>
+             </div>
         </div>
         <!--BOTON ECLIPSE-->
         <button type="button" class="btn btn-primary" onclick="cambiarModo()">
@@ -134,7 +59,7 @@
               
               <div class="col-lg-7">
                 <p class="display-4" style="text-align:center;">Introducción</p>
-                <p class="display-7" style="font-size:larger;text-align: center;">Me llamo José Fernández, actualmente soy un estudiante de la formación superior de Desarrollo de Aplicaciones Web en ILERNA, y este es mi formulario.</p>
+                <p class="display-7" style="font-size:larger;text-align: center;">Me llamo José Fernández, actualmente soy un estudiante de la formación superior de Desarrollo de Aplicaciones Web en ILERNA, y este es mi curriculum.</p>
               </div>
               
               <div class="col-lg-5" >
@@ -344,19 +269,19 @@
                 </tr>
                 <tr>
                   <th scope="row">Domicilio</th>
-                  <td>Calle Fray Francisco de Urso, 17</td>
+                  <td>Calle Fray Francisco de Pareja, 41</td>
                 </tr>
                 <tr>
                   <th scope="row">Teléfono</th>
-                  <td>+34 601986235</td>
+                  <td>+34 601349495</td>
                 </tr>
                 <tr>
                   <th scope="row">Fecha de nacimiento</th>
                   <td>19/02/2002</td>
                 </tr>
                 <tr>
-                  <th scope="row">Redes sociales</th>
-                  <td><img src="img/instagram-icon.png" class="img-fluid" width="7%" height="7%">  <a href="https://www.instagram.com/josefernandez.8/">josefernandez.8</a></td>
+                  <th scope="row">Correo electrónico</th>
+                  <td>josefernandezherrera2002@gmail.com</td>
                 </tr>
                 <tr>
                   <th scope="row">Localización</th>
